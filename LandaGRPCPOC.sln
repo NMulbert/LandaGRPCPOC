@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandaGRPCClient", "LandaGRPCClient\LandaGRPCClient\LandaGRPCClient.csproj", "{9FB3F52A-86AE-4E3D-94DB-A9124E93165F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandaGRPCClientConsole", "LandaGRPCClientConsole\LandaGRPCClientConsole\LandaGRPCClientConsole.csproj", "{6B44CEAE-54EB-4178-9ECC-6ED148CFBFE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FB3F52A-86AE-4E3D-94DB-A9124E93165F} = {9FB3F52A-86AE-4E3D-94DB-A9124E93165F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandaGRPCServer", "LandaGRPCServer\LandaGRPCServer\LandaGRPCServer.csproj", "{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandaGRPCServerConsole", "LandaGRPCServerConsole\LandaGRPCServerConsole\LandaGRPCServerConsole.csproj", "{DA64F24B-88B6-4DAC-847A-D7144CAC496E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9} = {84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{13BB850D-E905-49DD-830E-EC60AF3A383E}"
+	ProjectSection(SolutionItems) = preProject
+		Contracts\Hello.cs = Contracts\Hello.cs
+		Contracts\hello.proto = Contracts\hello.proto
+		Contracts\HelloGrpc.cs = Contracts\HelloGrpc.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FB3F52A-86AE-4E3D-94DB-A9124E93165F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB3F52A-86AE-4E3D-94DB-A9124E93165F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB3F52A-86AE-4E3D-94DB-A9124E93165F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB3F52A-86AE-4E3D-94DB-A9124E93165F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B44CEAE-54EB-4178-9ECC-6ED148CFBFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B44CEAE-54EB-4178-9ECC-6ED148CFBFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B44CEAE-54EB-4178-9ECC-6ED148CFBFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B44CEAE-54EB-4178-9ECC-6ED148CFBFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84102DB7-0DBD-48A9-B1D1-0D7D0AA4F6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA64F24B-88B6-4DAC-847A-D7144CAC496E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA64F24B-88B6-4DAC-847A-D7144CAC496E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA64F24B-88B6-4DAC-847A-D7144CAC496E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA64F24B-88B6-4DAC-847A-D7144CAC496E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00EDFFB1-0607-4459-B2B3-BD17FD0BE1B7}
+	EndGlobalSection
+EndGlobal
